@@ -5,7 +5,7 @@ echo Checking for internet connection...
 
 curl -s --head http://www.google.com/ | find "200 OK" >nul
 if %errorlevel% neq 0 (
-    echo No internet connection detected. Please check your connection and try again.
+    echo No internet connection detected. Please check your connection and try again. Tested for internet using google.com of you have strict restrictions, delete line 2 to 11
     pause
     exit /b
 )
